@@ -1,0 +1,111 @@
+header{
+    background-color: gold;
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+}
+body {
+    background-color: #363737;
+    margin : 0px; 
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color : #3E2723;
+    font-size:20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #5D1A1A;
+}
+
+
+.judul {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.judul hr {
+    width: 50px;
+    height: 0;
+    border: 1px solid gold;
+    margin: 0;
+}
+
+.judul h5{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gold;
+    font-weight: 500;
+}
+.kategori {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.kategori button{
+    flex: 1;
+    min-width: 120px;
+    padding: 18px 10px;
+    border: none;
+    background-color: gold;
+    color: #3E2723;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2;
+}
+
+.kategori button:hover{
+    background-color: beige;
+}
+
+.kategori button.aktif{
+    background-color: gold;
+    color: #3E2723;
+}
+.listproduk {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.boxproduk{
+    border: 1px;
+    background-color: beige;
+    text-align: left;
+}
+
+.boxproduk img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+}
+
+.boxproduk h2{
+    font-size: 15px;
+    color: #363737;
+    margin: 10px;
+}
+
+.linkproduk{
+    display: block;
+    text-decoration: none;
+    color: #3E2723;
+}
