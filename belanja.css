@@ -1,0 +1,25 @@
+header{
+    background-color: gold;
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+}
+body {
+    background-color: #363737;
+    margin : 0px; 
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color : #3E2723;
+    font-size:20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #5D1A1A;
+}
