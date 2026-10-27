@@ -3,7 +3,15 @@ header{
     padding: 30px;
     justify-content: center;
     display: flex;
+    align-items: center;
+    position: relative;
 }
+
+header img{
+    position:absolute;
+    left: 70px;
+}
+
 body {
     background-color: #363737;
     margin : 0px; 
