@@ -1,0 +1,75 @@
+header{
+    background-color: gold;
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+}
+body {
+    background-color: #363737;
+    margin : 0px; 
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color : #3E2723;
+    font-size:20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+.about-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 75px;
+}
+
+.about-label {
+    color: gold;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.about-label::before {
+    content: "";
+    display: inline-block;
+    width: 75px;
+    height: 2px;
+    background-color: gold;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.about-title h1,
+.about-title h2 {
+    font-size: clamp(30px, 3.2vw, 43px);
+    line-height: 1.35;
+    font-weight: 300;
+    margin: 0;
+    color: rgb(241, 241, 238);
+}
+
+.brand-name {
+    color: gold;
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+.about-description {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #fcf9f9;
+}
+
+.about-description p {
+    margin: 0;
+}
