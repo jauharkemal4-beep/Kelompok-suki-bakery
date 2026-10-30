@@ -116,3 +116,7 @@ nav a:hover{
     text-decoration: none;
     color: #3E2723;
 }
+
+.sembunyi {
+    display: none;
+}
