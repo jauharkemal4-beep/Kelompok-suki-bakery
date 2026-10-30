@@ -3,6 +3,13 @@ header{
     padding: 30px;
     justify-content: center;
     display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header img{
+    position:absolute;
+    left: 70px;
 }
 body {
     background-color: #363737;
@@ -74,7 +81,7 @@ nav a:hover{
 }
 
 .kategori button.aktif{
-    background-color: gold;
+    background-color: beige;
     color: #3E2723;
 }
 .listproduk {
@@ -88,7 +95,7 @@ nav a:hover{
 .boxproduk{
     border: 1px;
     background-color: beige;
-    text-align: left;
+    text-align: center;
 }
 
 .boxproduk img{
@@ -108,4 +115,8 @@ nav a:hover{
     display: block;
     text-decoration: none;
     color: #3E2723;
+}
+
+.sembunyi {
+    display: none;
 }
