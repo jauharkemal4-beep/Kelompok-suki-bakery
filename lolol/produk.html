@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head><meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Halaman Produk</title>
         <link rel="stylesheet" href="style/produk.css">
     </head>
     <body>
         <header>
-            <img src="images/logoK1.png" >
-            <nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="logo-link">
+                <img src="images/logoK1.png" alt="Logo K1">
+            </a>
+            <nav id="menu">
                 <a href="index.html">Home</a>
                 <a href="produk.html">Product</a>
                 <a href="about.html">About Us</a>
@@ -23,6 +28,12 @@
             <button data-filter="kue">Kue</button>
             <button data-filter="pastry">Pastry</button>
             <button data-filter="jajanan">Jajanan Tradisional</button>
+        </div>
+        <div class="urutkan">
+            <select id="urut" class="sortby">
+                <option value="az">Name (A-Z)</option>
+                <option value="za">Name (Z-A)</option>
+            </select>
         </div>
         <div class="listproduk" data-kategori="roti">
             <div class="boxproduk" >
@@ -299,6 +310,7 @@
             </div>
         </div>
         </div>
-    <script src="script/produk.js"></script>
+        <script src="script/navbar.js"></script>
+        <script src="script/produk.js"></script>
     </body>
 </html>

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head><meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Halaman utama</title>
         <link rel="stylesheet" href="style/home.css">
     </head>
     <body>
         <header> 
-            <img src="images/logoK1.png">
-            <nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="index.html" class="logo-link">
+                <img src="images/logoK1.png" alt="Logo K1">
+            </a>
+            <nav id="menu">
                 <a href="index.html">Home</a>
                 <a href="produk.html">Product</a>
                 <a href="about.html">About Us</a>
@@ -20,7 +25,7 @@
         </div>
         <div class="card card-roti">
              <h2>Roti</h2>
-             <a href="produk.html" ?kategori="roti">Lihat lebih banyak</a> 
+             <a href="produk.html?kategori=roti">Lihat lebih banyak</a> 
         </div>
         <div class="card card-kue">
              <h2>Kue</h2>
@@ -28,11 +33,13 @@
         </div>
         <div class="card card-pastry">
              <h2>Pastry</h2>
-             <a href="produk.html" ?kategori="pastry">Lihat lebih banyak</a>  
+             <a href="produk.html?kategori=pastry">Lihat lebih banyak</a>  
         </div>
         <div class="card card-kuetrad">
              <h2>Jajanan Tradisional</h2>
              <a href="produk.html?kategori=jajanan">Lihat lebih banyak</a> 
         </div>
+        <script src="script/navbar.js"></script>
+        <script src="script/produk.js"></script>
     </body>
 </html>
