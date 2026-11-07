@@ -36,3 +36,24 @@ window.addEventListener("popstate", function () {
 
 // Kondisi awal saat halaman dibuka
 pilihKategori(kategoriDariAlamat());
+
+// Urutkan nama produk (A-Z / Z-A) di setiap kategori
+const pilihUrut = document.getElementById("urut");
+
+function urutkan(arah) {
+    produk.forEach(function (daftar) {
+        const kotak = Array.from(daftar.children);
+        kotak.sort(function (a, b) {
+            const namaA = a.querySelector("p").textContent.trim();
+            const namaB = b.querySelector("p").textContent.trim();
+            return arah === "za"
+                ? namaB.localeCompare(namaA, "id")
+                : namaA.localeCompare(namaB, "id");
+        });
+        kotak.forEach(function (k) { daftar.appendChild(k); });
+    });
+}
+
+pilihUrut.addEventListener("change", function () {
+    urutkan(pilihUrut.value);
+});
