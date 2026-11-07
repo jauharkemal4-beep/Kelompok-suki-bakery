@@ -7,10 +7,17 @@ header{
     position: relative;
 }
 
-header img{
-    position:absolute;
+.logo-link {
+    position: absolute;
     left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.logo-link img {
+    display: block;
+}
+
 body {
     background-color: #363737;
     margin : 0px; 
@@ -119,4 +126,82 @@ nav a:hover{
 
 .sembunyi {
     display: none;
+}
+
+.urutkan {
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.sortby {
+    border: none;
+    border-bottom: 2px solid gold;
+    background: transparent;
+    color: gold;
+    font-size: 18px;
+    padding: 10px 5px;
+    width: 220px;
+    cursor: pointer;
+}
+.sortby:focus { outline: none; }
+.sortby option { color: #3E2723; }
+
+/* ===== Hamburger ===== */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0;
+        height: 80px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        width: 28px;
+        height: 3px;
+        background: #3E2723;
+        border-radius: 2px;
+    }
+
+    .logo-link {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo-link img {
+        height: 55px;
+        width: auto;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        background-color: gold;
+        z-index: 10;
+    }
+
+    nav.buka {
+        display: flex;
+    }
 }
